@@ -9,32 +9,180 @@
     <title>me | tom black</title>
 </head>
 <body>
-    <div class="headerWrapper">
-        <div class="header">
-            <div class="headerText">
-                <h1>hi! i'm tom</h1>
+
+    <!-- Intro section -->
+
+    <div class="contentWrapper">
+        <section class="intro">
+
+            <div class="introText">
+                <h1>hi, i'm tom!</h1>
                 <br>
                 <p>i'm on a journey to become a front end developer; with a passion for sleek, minimalist design. i love all things tech, music and cars and the creativity that comes with it all.</p>
                 <br>
+
                 <div class="stackWrapper">
+
                     <div class="stack">
                         <p>stack:</p>
                         <div class="stackIconWrapper">
-                            <div class="stackIcon"><i class="fa-brands fa-html5"></i></div>
-                            <div class="stackIcon"><i class="fa-brands fa-css"></i></div>
+                            <div class="stackIcon"><i class="fa-brands fa-html5"></i><div class="stackTooltip">HTML5</div></div>
+                            <div class="stackIcon"><i class="fa-brands fa-css"></i><div class="stackTooltip">CSS</div></div>
                         </div>
                     </div>
+
                     <div class="stack">
                         <p>in progress:</p>
                         <div class="stackIconWrapper">
-                            <div class="stackIcon"><i class="fa-brands fa-js"></i></div>
-                            <div class="stackIcon"><i class="fa-brands fa-react"></i></div>
+                            <div class="stackIcon"><i class="fa-brands fa-js"></i><div class="stackTooltip">JavaScript</div></div>
+                            <div class="stackIcon"><i class="fa-brands fa-react"></i><div class="stackTooltip">React</div></div>
                         </div>
-                    </div>        
-                </div>   
+                    </div> 
+
+                </div>
+
             </div>
-            <div class="headerAvatar"><img src="img/user-icon.png" alt="Master Chief Buddha"></div>
-        </div>
+
+            <div class="introAvatar"><img src="img/user-icon.png" alt="Master Chief Buddha"></div>
+        </section>
+    </div>
+
+    <!-- Experience section -->
+
+    <div class="contentWrapper">
+        <section class="experience">
+            <h1>experience</h1>
+            
+            <div class="expZigzag">
+
+                <div class="expCard">
+                    <div class="expCardTitle">
+                        <h1>Digital Content, Software and Hardware Technician</h1><span>03/2025 – Present</span>
+                    </div>
+                    <span>The Solution House, Wetherby</span>
+                    <br><br>
+
+                    <div id="card1" class="ulWrapper">
+                        <ul>
+                            <li>Project management, technical consultation and production/installation for all our digital signage projects.</li>
+                            <li>Demonstrations and technical walkthroughs for both large and small clients such as Jet2, Morrisons, Lidl, Sally Beauty, UltraFlex Gym and many more.</li>
+                            <li>Digital content asset creation, bespoke apps and branding consultant for our digital signage projects.</li>
+                            <li>Remote and on-site support for our digital signage projects. Upwards of 5-10 daily queries from tickets/emails/other channels are managed simultaneously through Jira. These range from low priority content management queries, to high priority hardware faults requiring in depth assistance.</li>
+                            <li>Assistance with digital asset creation for The Solution House branding - social media, WordPress and email campaigns.</li>
+                            <li>Hardware expert - Novastar LED video wall panels, controllers and accessories, Sony LED video wall panels, Android based digital signage displays.</li>
+                            <li>Software expert - Adobe Suite (Photoshop, Illustrator, Premiere Pro), Figma, Automation Engine, Unity engine for simple bespoke apps, Viplex suite, NovaLCT, SmartLCT, Docker, Xibo</li>
+                            <li>Internal IT support and projects managed through Trello. Partnered with an external MSP.</li>
+                        </ul>
+                    </div>
+                    
+                    <button class="expExpandArrow" onclick="card1Toggle()"><i class="fa-solid fa-angle-down"></i></button>
+                </div>
+
+                <div class="expCard">
+                    <div class="expCardTitle">
+                        <h1>IT Technician and Sysops</h1><span>07/2024 – 02/2025</span>
+                    </div>
+                    <span>Northgate Lighting, Leeds</span>
+                    <br><br>
+
+                    <div id="card2" class="ulWrapper">
+                        <ul>
+                            <li>Provided IT support for employees across Northgate Lighting and various other businesses in the building using ITSM and ITIL workflows.</li>
+                            <li>Administered Microsoft products - Active Directory/Azure/Entra, Microsoft 365/Office, Dynamics NAV, Teams, Exchange, OneDrive.</li>
+                            <li>Developed, documented and updated IT policies, security protocols, and technical guides.</li>
+                            <li>Managed a helpdesk ticket system and IT project boards using Jira Service Management, as well as administered other Jira products.</li>
+                            <li>Administered and configured SQL based reports using Jet Reports.</li>
+                            <li>Conducted training on new software, cybersecurity, and new remote work infrastructure.</li>
+                            <li>Assisted the marketing team with WordPress and Shopify theme updates, updating SSL certificates and general website maintenance. Creation of web focused media utilising tools such as Adobe Creative Cloud, Figma and Canva.</li>
+                            <li>Hands-on tasks including CCTV maintenance, air-con maintenance, and hardware recycling.</li>
+                            <li>Various coding projects including a web based fire register, Python based UI for AI speech-to-text and a Javascript based web scraper.</li>
+                        </ul>
+                    </div>
+
+                    <button class="expExpandArrow" onclick="card2Toggle()"><i class="fa-solid fa-angle-down"></i></button>
+                </div> 
+                
+                <div class="expCard">
+                    <div class="expCardTitle">
+                        <h1>Print Room Specialist</h1><span>10/2022 – 07/2024</span>
+                    </div>
+                    <span>The Solution House, Wetherby</span>
+                    <br><br>
+
+                    <div id="card3" class="ulWrapper">
+                        <ul>
+                            <li>Senior responsibilities - project management.</li>
+                            <li>Continuous learning and development of new equipment and techniques.</li>
+                            <li>Training and onboarding of internal staff.</li>
+                            <li>Software expert - Adobe Suite, Summa, Lory, Windows, Linux.</li>
+                            <li>Hardware expert-Zund cutters, SwissQ printers, plotters, laminators.</li>
+                            <li>Usage of Trello for managing job tickets.</li>
+                        </ul>
+                    </div>
+
+                    <button class="expExpandArrow" onclick="card3Toggle()"><i class="fa-solid fa-angle-down"></i></button>
+                </div>
+
+                <div class="expCard">
+                    <div class="expCardTitle">
+                        <h1>IT Technician</h1><span>08/2021 – 09/2022</span>
+                    </div>
+                    <span>The PC Crew, Wetherby</span>
+                    <br><br>
+
+                    <div id="card4" class="ulWrapper">
+                        <ul>
+                            <li>Efficient and accurate diagnosis and repair of hardware/software faults.</li>
+                            <li>Installation and setup of new systems sometimes including a bespoke management/monitoring software.</li>
+                            <li>Usage of Trello for management of tickets.</li>
+                            <li>Outbound diagnosis of repair and negotiating price.</li>
+                            <li>Bespoke PC consultation and building.</li>
+                            <li>On-site visits for domestic I commercial support.</li>
+                            <li>Usage of Trello for managing tickets.</li>
+                            <li>Suggested and implemented new services to offer, such as bespoke 3D printed repair parts and refurbished systems/bespoke PC systems.</li>
+                            <li>Assisted with Web Dev/SEO/Marketing projects through their sister company - CANdo Studio</li>
+                        </ul>
+                    </div>
+                    <button class="expExpandArrow" onclick="card4Toggle()"><i class="fa-solid fa-angle-down"></i></button>
+                </div>
+                
+            </div>
+
+        </section>
     </div>
 </body>
+<script>
+function card1Toggle() {
+  var x = document.getElementById("card1");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+function card2Toggle() {
+  var x = document.getElementById("card2");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+function card3Toggle() {
+  var x = document.getElementById("card3");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+function card4Toggle() {
+  var x = document.getElementById("card4");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
 </html>

@@ -1,3 +1,4 @@
+/* global styling */
 * {
     margin: 0;
     padding: 0;
@@ -6,26 +7,32 @@
     font-family: 'Karla', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.headerWrapper {
+body {
+    background-color: #fcfcfc;
+}
+
+.contentWrapper {
     display: flex;
     align-items: center;
     justify-content: center;
     
 }
 
-.header {
+/* Intro section styling */
+
+.intro {
     height: 100vh;
     width: 1080px;
-    /*background-color: #bbb;*/
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 1rem;
     p {
         font-size: 1.2rem;
     }
 }
 
-.headerText {
+.introText {
     width: 75%;
     padding-right: 0.8rem;
     h1 {
@@ -55,7 +62,23 @@
     }
 }
 
-.headerAvatar {
+.stackTooltip {
+  visibility: hidden;
+  background-color: #06c;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  margin: 1rem;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+}
+
+.stackIcon:hover .stackTooltip {
+  visibility: visible;
+}
+
+.introAvatar {
     width: 25%;
     img {
         display: block;
@@ -63,4 +86,81 @@
         border-radius: 100%;
         box-shadow: #bbb 5px 5px 15px;
     }
+}
+
+/* Experience section styling */
+
+.experience {
+    min-height: 100vh;
+    width: 1080px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    p {
+        font-size: 1.2rem;
+    }
+}
+
+.expZigzag {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.expCard {
+    width: 75%;
+    background-color: #eee;
+    box-shadow: #696969 1px 1px 2px;
+    border-radius: 10px;
+    padding: 1rem;
+    padding-bottom: 0.5rem;
+
+    @media screen and (max-width: 1240px) {
+        width: 100%;
+        
+    }
+
+    ul {
+    list-style-type: none;
+    display: block;
+    margin-left: 10px;
+    }
+
+    li:before {
+    content: "- ";
+    margin: 0 0 0 -10px;
+    }
+
+    li {
+    margin-bottom: 0.5rem;
+    }
+}
+
+.expCard:nth-child(even) {
+    align-self: flex-end;
+} /* This will align even-numbered cards to the right (flex-end), creating a zigzag pattern. */
+
+.expCardTitle {
+    display: flex;
+    justify-content: space-between;
+
+    h1 {
+        font-size: 1.25rem;
+    color: #06c;
+    }
+}
+
+.ulWrapper {
+    display: none;
+}
+
+.expExpandArrow {
+    width: 100%;
+    background: none;
+    border: none;
+    color: #06c;
+    font-size: 1.5rem;
+    cursor: pointer;
 }
