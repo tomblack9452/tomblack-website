@@ -221,3 +221,100 @@ body {
 .projectCard:hover .projectOverlay {
     opacity: 1;
 }
+
+/* Projects carousel */
+
+.carousel {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.carouselMain {
+    width: 100%;
+}
+
+.carouselMain .projectCard {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+}
+
+.carouselStrip {
+    display: flex;
+    gap: 0.75rem;
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+    scrollbar-width: thin;
+    scrollbar-color: #06c #eee;
+}
+
+.carouselStrip::-webkit-scrollbar {
+    height: 4px;
+}
+
+.carouselStrip::-webkit-scrollbar-track {
+    background: #eee;
+    border-radius: 2px;
+}
+
+.carouselStrip::-webkit-scrollbar-thumb {
+    background: #06c;
+    border-radius: 2px;
+}
+
+.carouselThumb {
+    flex: 0 0 160px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    cursor: pointer;
+}
+
+.carouselThumb video {
+    width: 164px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 2px solid transparent;
+    transition: border-color 0.2s ease, opacity 0.2s ease;
+    opacity: 0.6;
+}
+
+.carouselThumb span {
+    font-size: 0.75rem;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: color 0.2s ease;
+}
+
+.carouselThumb:hover video,
+.carouselThumb.active video {
+    border-color: #06c;
+    opacity: 1;
+}
+
+.carouselThumb.active span {
+    color: #06c;
+    font-weight: bold;
+}
+
+/* Projects highlight video — kept for legacy, now unused */
+
+.projectHighlight {
+    margin-top: 1rem;
+}
+
+.projectHighlight .projectCard {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+}
+
+.expExpandArrow i {
+    transition: transform 0.25s ease-in-out;
+}
+
+.expCard .projectGrid {
+    margin-bottom: 0.5rem;
+}
