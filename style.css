@@ -2,22 +2,49 @@
 * {
     margin: 0;
     padding: 0;
-    color: #696969;
+    color: var(--text-color);
     box-sizing: border-box;
     font-family: 'Karla', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* #0c1014 #2b2b2b*/
+
+:root {
+    --primary-color: #06c;
+    --text-color: #696969;
+    --background-color: #fcfcfc;
+    --card-color: #eee;
+}
+
 body {
-    background-color: #fcfcfc;
+    background-color: var(--background-color);
 }
 
 hr {
     width: 1080px;
     margin: auto;
-    border-top: #06c 1px solid;
+    opacity: 0.25;
+    border-top: var(--primary-color) 1px solid;
 
     @media screen and (max-width: 1240px) {
         width: 90%;
+    }
+}
+
+.lightDarkMode {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 1000;
+
+    i {
+        color: var(--primary-color);
+    }
+
+    @media screen and (max-width: 1240px) {
+        position: relative;
     }
 }
 
@@ -58,7 +85,7 @@ hr {
     padding-right: 0.8rem;
     h1 {
         font-size: 2.6rem;
-        color: #06c;
+        color: var(--primary-color);
     }
     
     @media screen and (max-width: 768px) {
@@ -85,15 +112,15 @@ hr {
     margin: 0.4rem 0rem;
     i {
         font-size: 2rem;
-        color: #06c;
+        color: var(--primary-color);
         text-align: left;
     }
 }
 
 .stackTooltip {
   visibility: hidden;
-  background-color: #06c;
-  color: #fff;
+  background-color: var(--primary-color);
+  color: #fcfcfc;
   text-align: center;
   border-radius: 6px;
   margin: 1rem;
@@ -149,7 +176,7 @@ hr {
 
 .expCard {
     width: 75%;
-    background-color: #eee;
+    background-color: var(--card-color);
     border-radius: 10px;
     padding: 1rem;
     padding-bottom: 0.5rem;
@@ -184,7 +211,7 @@ hr {
 
     h1 {
         font-size: 1.25rem;
-    color: #06c;
+    color: var(--primary-color);
     }
     
     @media screen and (max-width: 768px) {
@@ -201,7 +228,7 @@ hr {
     width: 100%;
     background: none;
     border: none;
-    color: #06c;
+    color: var(--primary-color);
     font-size: 1.5rem;
     cursor: pointer;
 }
@@ -230,7 +257,7 @@ hr {
 .projectOverlay {
     position: absolute;
     inset: 0;
-    background-color: rgba(0, 102, 204, 0.88);
+    background-color: var(--primary-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -240,16 +267,16 @@ hr {
 
     h1 {
         font-size: 1.25rem;
-        color: #fff;
+        color: var(--background-color);
     }
 
     a {
-        color: #fff;
+        color: var(--background-color);
         text-decoration: underline;
     }
 
     i {
-        color: #fff;
+        color: var(--background-color);
         margin-right: 0.5rem;
     }
 
@@ -288,7 +315,7 @@ hr {
     overflow-x: auto;
     padding-bottom: 0.5rem;
     scrollbar-width: thin;
-    scrollbar-color: #06c #eee;
+    scrollbar-color: var(--primary-color) #eee;
 }
 
 .carouselStrip::-webkit-scrollbar {
@@ -301,7 +328,7 @@ hr {
 }
 
 .carouselStrip::-webkit-scrollbar-thumb {
-    background: #06c;
+    background: var(--primary-color);
     border-radius: 2px;
 }
 
@@ -349,12 +376,12 @@ hr {
 
 .carouselThumb:hover video,
 .carouselThumb.active video {
-    border-color: #06c;
+    border-color: var(--primary-color);
     opacity: 1;
 }
 
 .carouselThumb.active span {
-    color: #06c;
+    color: var(--primary-color);
     font-weight: bold;
 }
 

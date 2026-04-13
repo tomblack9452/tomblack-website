@@ -10,6 +10,10 @@
 </head>
 <body>
 
+    <div class="lightDarkMode">
+        <i class="fa-solid fa-sun"></i>
+    </div>
+
     <!-- Intro section -->
 
     <div class="contentWrapper">
@@ -70,7 +74,7 @@
                         <span>
                             End-to-end content production and technical support for digital signage projects, from initial brief to installation. I handle asset creation, bespoke app builds, and branding across a client roster that includes <strong>Jet2</strong>, <strong>Morrisons</strong>, <strong>Lidl</strong>, and <strong>Sally Beauty</strong>.
                             <br><br>
-                            Daily, I'm juggling <strong>5–10</strong> support tickets simultaneously through <strong>Jira</strong>, which range from quick content tweaks to complex hardware faults that need real troubleshooting.
+                            Daily, I am juggling <strong>5–10</strong> support tickets simultaneously through <strong>Jira</strong>, which range from quick content tweaks to complex hardware faults that need real troubleshooting.
                             <br><br>
                             Beyond client work, I produce content for The Solution House itself — <strong>social media</strong>, <strong>client showcase reels</strong>, and <strong>WordPress</strong> content changes etc. I also handle internal IT support, which includes everything from software troubleshooting to hardware maintenance and network issues.
                             <br><br>
@@ -184,7 +188,7 @@
                             <source id="mainVideoSrc" src="vid/clean.mp4" type="video/mp4">
                         </video>
                         <div class="projectOverlay" id="mainOverlay">
-                            <h1 id="mainTitle">Static Dress - Clean (2019)</h1>
+                            <h1 id="mainTitle">Static Dress - clean. (2019)</h1>
                             <span id="mainDesc">this was the first release of the then new static dress project. written, featured in, technical assistance, set design/building.</span>
                             <span id="mainYt"><i class="fa-brands fa-youtube"></i><a href="https://www.youtube.com/watch?v=i4e_b-DmggY" target="_blank">YouTube</a></span>
                             <span id="mainSp"><i class="fa-brands fa-spotify"></i><a href="https://open.spotify.com/track/1vIFieaqVeCU55JZjwpJID?si=e19cbd9ed0c34e43" target="_blank">Spotify</a></span>
@@ -196,10 +200,10 @@
                 <div class="carouselStrip">
 
                     <div class="carouselThumb active" onclick="setActive(this, 'vid/clean.mp4', 'Static Dress - Clean (2019)', 'this was the first release of the then new static dress project. written, featured in, technical assistance, set design/building.', 'https://www.youtube.com/watch?v=i4e_b-DmggY', 'https://open.spotify.com/track/1vIFieaqVeCU55JZjwpJID?si=e19cbd9ed0c34e43')">
-                        <video muted loop>
+                        <video muted loop preload="auto">
                             <source src="vid/clean.mp4" type="video/mp4">
                         </video>
-                        <span>Clean</span>
+                        <span>clean.</span>
                     </div>
 
                     <div class="carouselThumb" onclick="setActive(this, 'vid/dsc_301.mp4', 'Static Dress - DSC_301 (2019)', 'an interlude track. very simple video and song idea, named after and inspired by a mysterious undisclosed photo with the same name.', 'https://www.youtube.com/watch?v=z4lnCg9_86Q', 'https://open.spotify.com/track/4mXT7Jadd5MR9kGfCHoF3j?si=db3e56e83ff5447f')">
@@ -240,7 +244,7 @@
                 </div>
             </div>
 
-            <br><br><span><i>code</i></span><br>
+            <br><br><span><i>games</i></span><br>
 
             <div class="carouselMain">
                 <div class="projectCard">
@@ -263,6 +267,26 @@
 
 </body>
 <script>
+// Light/dark mode toggle
+document.querySelector('.lightDarkMode').addEventListener('click', function() {
+    document.body.classList.toggle('dark-mode');
+    this.querySelector('i').classList.toggle('fa-sun');
+    this.querySelector('i').classList.toggle('fa-moon');
+    
+    // Change CSS variables for dark/light mode
+    if (document.body.classList.contains('dark-mode')) {
+        document.documentElement.style.setProperty('--background-color', '#1a1a1a');
+        document.documentElement.style.setProperty('--text-color', '#cfcfcf');
+        document.documentElement.style.setProperty('--card-color', '#2b2b2b');
+    } else {
+        document.documentElement.style.setProperty('--background-color', '#fcfcfc');
+        document.documentElement.style.setProperty('--text-color', '#696969');
+        document.documentElement.style.setProperty('--card-color', '#eee');
+    }
+});
+
+
+// Toggle open functions for experience cards
 function card1Toggle() {
   var x = document.getElementById("card1");
   if (x.style.display === "block") {
@@ -307,6 +331,7 @@ function moreVideosToggle() {
   }
 }
 
+// Set active video and update main display with corresponding info
 function setActive(thumbEl, src, title, desc, ytUrl, spUrl) {
   document.querySelectorAll('.carouselThumb').forEach(t => {
     t.classList.remove('active');
