@@ -39,6 +39,12 @@ hr {
     cursor: pointer;
     z-index: 1000;
 
+    /* CSS to disable text selection */
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none;    /* Firefox */
+    -ms-user-select: none;     /* IE 10+ */
+    user-select: none;         /* Standard */
+
     i {
         color: var(--primary-color);
     }
@@ -267,16 +273,16 @@ hr {
 
     h1 {
         font-size: 1.25rem;
-        color: var(--background-color);
+        color: #fcfcfc;
     }
 
     a {
-        color: var(--background-color);
+        color: #fcfcfc;
         text-decoration: underline;
     }
 
     i {
-        color: var(--background-color);
+        color: #fcfcfc;
         margin-right: 0.5rem;
     }
 
