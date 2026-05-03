@@ -10,9 +10,23 @@
 </head>
 <body>
 
-    <div class="lightDarkMode">
-        <i class="fa-solid fa-sun"></i>
-    </div>
+    <nav class="topBar">
+        <div class="lightDarkMode">
+            <i class="fa-solid fa-sun"></i>
+        </div>
+        <div class="links">
+            <a href="http://linkedin.com/in/tom-b-a83466207/" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="http://github.com/tomblack9452" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer" style="position: relative;">
+                <i class="fa-solid fa-file"></i>
+                <span>CV</span>
+            </a>
+        </div>
+    </nav>
 
     <!-- Intro section -->
 
@@ -184,11 +198,11 @@
                 <!-- Main feature video -->
                 <div class="carouselMain">
                     <div class="projectCard" id="mainCard">
-                        <video id="mainVideo" width="100%" height="100%" autoplay muted loop>
+                        <video id="mainVideo" width="100%" height="100%" autoplay muted loop preload="auto">
                             <source id="mainVideoSrc" src="vid/clean.mp4" type="video/mp4">
                         </video>
                         <div class="projectOverlay" id="mainOverlay">
-                            <h1 id="mainTitle">Static Dress - clean. (2019)</h1>
+                            <h1 id="mainTitle">Static Dress - clean . (2019)</h1>
                             <span id="mainDesc">this was the first release of the then new static dress project. written, featured in, technical assistance, set design/building.</span>
                             <span id="mainYt"><i class="fa-brands fa-youtube"></i><a href="https://www.youtube.com/watch?v=i4e_b-DmggY" target="_blank">YouTube</a></span>
                             <span id="mainSp"><i class="fa-brands fa-spotify"></i><a href="https://open.spotify.com/track/1vIFieaqVeCU55JZjwpJID?si=e19cbd9ed0c34e43" target="_blank">Spotify</a></span>
@@ -200,42 +214,42 @@
                 <div class="carouselStrip">
 
                     <div class="carouselThumb active" onclick="setActive(this, 'vid/clean.mp4', 'Static Dress - Clean (2019)', 'this was the first release of the then new static dress project. written, featured in, technical assistance, set design/building.', 'https://www.youtube.com/watch?v=i4e_b-DmggY', 'https://open.spotify.com/track/1vIFieaqVeCU55JZjwpJID?si=e19cbd9ed0c34e43')">
-                        <video muted loop preload="auto">
+                        <video muted loop preload="auto" playsinline>
                             <source src="vid/clean.mp4" type="video/mp4">
                         </video>
                         <span>clean.</span>
                     </div>
 
                     <div class="carouselThumb" onclick="setActive(this, 'vid/dsc_301.mp4', 'Static Dress - DSC_301 (2019)', 'an interlude track. very simple video and song idea, named after and inspired by a mysterious undisclosed photo with the same name.', 'https://www.youtube.com/watch?v=z4lnCg9_86Q', 'https://open.spotify.com/track/4mXT7Jadd5MR9kGfCHoF3j?si=db3e56e83ff5447f')">
-                        <video muted loop>
+                        <video muted loop preload="auto" playsinline>
                             <source src="vid/dsc_301.mp4" type="video/mp4">
                         </video>
                         <span>DSC_301</span>
                     </div>
 
                     <div class="carouselThumb" onclick="setActive(this, 'vid/adaptive taste.mp4', 'Static Dress - Adaptive Taste (2019)', 'the second full release of the static dress project. written, featured in, technical assistance, set design/building.', 'https://www.youtube.com/watch?v=hX8giPKJN2Q', 'https://open.spotify.com/track/6HRxVBgLg6KiGQ1jj4Yfx7?si=ab0c88b057984233')">
-                        <video muted loop>
+                        <video muted loop preload="auto" playsinline>
                             <source src="vid/adaptive taste.mp4" type="video/mp4">
                         </video>
                         <span>Adaptive Taste</span>
                     </div>
 
                     <div class="carouselThumb" onclick="setActive(this, 'vid/safeword.mp4', 'Static Dress - Safeword (2020)', 'a track previously named gradient that was revamped in a 3am session. written, featured in, technical assistance, set design/building.', 'https://www.youtube.com/watch?v=9-ML8G3Uhdg', 'https://open.spotify.com/track/2Yo4G6zMFWvF6KbSDJrOz3?si=4a43947832704ee6')">
-                        <video muted loop>
+                        <video muted loop preload="auto" playsinline>
                             <source src="vid/safeword.mp4" type="video/mp4">
                         </video>
                         <span>Safeword</span>
                     </div>
 
                     <div class="carouselThumb" onclick="setActive(this, 'vid/ftao.mp4', 'Static Dress - for the attention of... (2020)', 'the heaviest and most technically crazy song yet. written, featured in, technical assistance, set design/building.', 'https://www.youtube.com/watch?v=KUbb-zHd7C4', 'https://open.spotify.com/track/6F3amm6B9ChI64SYqh56hV?si=be7706e4fb8e4743')">
-                        <video muted loop>
+                        <video muted loop preload="auto" playsinline>
                             <source src="vid/ftao.mp4" type="video/mp4">
                         </video>
                         <span>for the attention of...</span>
                     </div>
 
                     <div class="carouselThumb" onclick="setActive(this, 'vid/indecent_.mp4', 'Static Dress - _indecent (2021)', 'an interlude track recorded separately because of covid restrictions. written, featured in, technical assistance, set design/building.', 'https://www.youtube.com/watch?v=O_yBimApMLw', 'https://open.spotify.com/track/14cqD50HFB7NEjtQMRCK84?si=320337c63adb4dbd')">
-                        <video muted loop>
+                        <video muted loop preload="auto" playsinline>
                             <source src="vid/indecent_.mp4" type="video/mp4">
                         </video>
                         <span>_indecent</span>
@@ -262,101 +276,28 @@
         </section>
     </div>
 
-    <!-- Contact section -->
-     <hr>
+    <!-- Footer section -->
+     <footer>
+        <h1>Let's connect!</h1>
+        <div class="footerLinks">
+                <a href="http://linkedin.com/in/tom-b-a83466207/" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="http://github.com/tomblack9452" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://drive.google.com/file/d/1T1WQBl-SV7jiU_MXs5sMXy5wOAzk66q8/view?usp=sharing" target="_blank" rel="noopener noreferrer" style="position: relative;">
+                <i class="fa-solid fa-file"></i>
+                <span style="color: var(--primary-color);">CV</span>
+            </a>
+        </div>
+        <div class="footerContact">
+            <a href="mailto:tom.black9452@gmail.com"><i class="fa-solid fa-envelope"></i> tom.black9452@gmail.com</a>
+            <a href="tel:07525289885"><i class="fa-solid fa-phone"></i> 07525 289885</a>
+        </div>
+        <span class="footerCopy">&copy; 2026 Tom Black</span>
+    </footer>
 
 </body>
-<script>
-// Light/dark mode toggle
-document.querySelector('.lightDarkMode').addEventListener('click', function() {
-    document.body.classList.toggle('dark-mode');
-    this.querySelector('i').classList.toggle('fa-sun');
-    this.querySelector('i').classList.toggle('fa-moon');
-    
-    // Change CSS variables for dark/light mode
-    if (document.body.classList.contains('dark-mode')) {
-        document.documentElement.style.setProperty('--background-color', '#1a1a1a');
-        document.documentElement.style.setProperty('--text-color', '#cfcfcf');
-        document.documentElement.style.setProperty('--card-color', '#2b2b2b');
-    } else {
-        document.documentElement.style.setProperty('--background-color', '#fcfcfc');
-        document.documentElement.style.setProperty('--text-color', '#696969');
-        document.documentElement.style.setProperty('--card-color', '#eee');
-    }
-});
-
-
-// Toggle open functions for experience cards
-function card1Toggle() {
-  var x = document.getElementById("card1");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
-function card2Toggle() {
-  var x = document.getElementById("card2");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
-function card3Toggle() {
-  var x = document.getElementById("card3");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
-function card4Toggle() {
-  var x = document.getElementById("card4");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
-function moreVideosToggle() {
-  var x = document.getElementById("moreVideos");
-  var btn = event.currentTarget;
-  if (x.style.display === "block") {
-    x.style.display = "none";
-    btn.querySelector("i").style.transform = "rotate(0deg)";
-  } else {
-    x.style.display = "block";
-    btn.querySelector("i").style.transform = "rotate(180deg)";
-  }
-}
-
-// Set active video and update main display with corresponding info
-function setActive(thumbEl, src, title, desc, ytUrl, spUrl) {
-  document.querySelectorAll('.carouselThumb').forEach(t => {
-    t.classList.remove('active');
-    t.querySelector('video').pause();
-  });
-  thumbEl.classList.add('active');
-  thumbEl.querySelector('video').play();
-
-  var mainVideo = document.getElementById('mainVideo');
-  var mainSrc = document.getElementById('mainVideoSrc');
-  mainSrc.src = src;
-  mainVideo.load();
-  mainVideo.play();
-
-  document.getElementById('mainTitle').textContent = title;
-  document.getElementById('mainDesc').textContent = desc;
-  document.getElementById('mainYt').innerHTML = '<i class="fa-brands fa-youtube"></i><a href="' + ytUrl + '" target="_blank">YouTube</a>';
-  document.getElementById('mainSp').innerHTML = '<i class="fa-brands fa-spotify"></i><a href="' + spUrl + '" target="_blank">Spotify</a>';
-}
-
-document.querySelectorAll('.carouselThumb').forEach(function(thumb) {
-  thumb.addEventListener('mouseenter', function() { this.querySelector('video').play(); });
-  thumb.addEventListener('mouseleave', function() {
-    if (!this.classList.contains('active')) this.querySelector('video').pause();
-  });
-});
-</script>
+<script src="script.js"></script>
 </html>
