@@ -349,12 +349,21 @@ hr {
     span {
         font-size: 1rem;
         color: rgba(255, 255, 255, 0.8);
-        margin-top: 0.3rem;
+        margin: 0.6rem 0 0;
     }
 }
 
 .projectCard:hover .projectOverlay {
     opacity: 1;
+}
+
+/* Ensure main carousel media fill the card and match sizing */
+.carouselMain .projectCard img,
+.carouselMain .projectCard video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 /* Projects carousel */
@@ -416,21 +425,24 @@ hr {
     }
 }
 
-.carouselThumb video {
-    max-width: 164px;
+.carouselThumbMedia {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border-radius: 6px;
+}
+
+.carouselThumbMedia img,
+.carouselThumbMedia video {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
+    display: block;
     border-radius: 6px;
     border: 2px solid transparent;
     transition: border-color 0.2s ease, opacity 0.2s ease;
     opacity: 0.6;
-
-    @media screen and (max-width: 768px) {
-        max-width: 120px;
-    }
-
-    @media screen and (max-width: 480px) {
-        max-width: 90px;
-    }
+    box-sizing: border-box;
 }
 
 .carouselThumb span {
@@ -440,10 +452,16 @@ hr {
     overflow: hidden;
     text-overflow: ellipsis;
     transition: color 0.2s ease;
+    line-height: 1rem;
+    height: 1rem;
+    min-height: 1rem;
+    display: block;
 }
 
 .carouselThumb:hover video,
-.carouselThumb.active video {
+.carouselThumb.active video,
+.carouselThumb:hover img,
+.carouselThumb.active img {
     border-color: var(--primary-color);
     opacity: 1;
 }

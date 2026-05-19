@@ -49,7 +49,6 @@
                             <div class="stackIcon"><i class="fa-brands fa-css"></i><div class="stackTooltip">CSS</div></div>
                             <div class="stackIcon" style="margin-right: 0.25rem;"><i class="fa-brands fa-sass"></i><div class="stackTooltip">Sass</div></div>
                             <div class="stackIcon"><i class="fa-brands fa-js"></i><div class="stackTooltip">JavaScript</div></div>
-                            <div class="stackIcon"><i class="fa-brands fa-python"></i><div class="stackTooltip">Python</div></div>
                         </div>
                     </div>
 
@@ -194,21 +193,23 @@
         <section class="projects">
             <h1>projects</h1>
             <span><br>hover or click to learn more!</span>
-            <br><br><span><i>music</i></span>
 
-            <div class="carousel" id="carousel">
+            <br><br><span><i>web/software development</i></span>
 
-                <!-- Main feature video -->
+            <div class="carousel" data-carousel="web">
+
+                <!-- Main feature image -->
                 <div class="carouselMain">
-                    <div class="projectCard" id="mainCard">
-                        <video id="mainVideo" width="100%" height="100%" autoplay muted loop preload="auto">
-                            <source id="mainVideoSrc" src="vid/clean.mp4" type="video/mp4">
+                    <div class="projectCard" id="webMainCard">
+                        <img id="webMainImage" src="img/label-tool.png" alt="Label maker screenshot">
+                        <video id="webMainVideo" width="100%" height="100%" autoplay muted loop preload="auto" style="display:none;">
+                            <source id="webMainVideoSrc" src="" type="video/mp4">
                         </video>
-                        <div class="projectOverlay" id="mainOverlay">
-                            <h1 id="mainTitle">Static Dress - clean . (2019)</h1>
-                            <span id="mainDesc">this was the first release of the then new static dress project. written, featured in, technical assistance, set design/building.</span>
-                            <span id="mainYt"><i class="fa-brands fa-youtube"></i><a href="https://www.youtube.com/watch?v=i4e_b-DmggY" target="_blank">YouTube</a></span>
-                            <span id="mainSp"><i class="fa-brands fa-spotify"></i><a href="https://open.spotify.com/track/1vIFieaqVeCU55JZjwpJID?si=e19cbd9ed0c34e43" target="_blank">Spotify</a></span>
+                        <div class="projectOverlay">
+                            <h1 id="webMainTitle">Label Maker</h1>
+                            <span id="webMainDesc">This is a simple web-based tool written for generating custom labels. This is fully custom to our workflow and used internally by multiple staff daily. We receive order spreadsheets which need to be parsed into labels for each individual item and box in the packing department. This tool lets you create both types of labels and it automatically populates the information based on which item and store you're picking. This saves an immense amount of time and cuts mistakes down to near zero as this was all done manually beforehand.</span>
+                            <span id="webMainYt"><i class="fa-solid fa-gamepad"></i><a href="https://tsh-label-maker.vercel.app/" target="_blank">Live Demo</a></span>
+                            <span id="webMainSp"><i class="fa-brands fa-github"></i><a href="https://github.com/tomblack9452/TSH-Label-Maker" target="_blank">GitHub</a></span>
                         </div>
                     </div>
                 </div>
@@ -216,45 +217,220 @@
                 <!-- Scrollable thumbnail strip -->
                 <div class="carouselStrip">
 
-                    <div class="carouselThumb active" onclick="setActive(this, 'vid/clean.mp4', 'Static Dress - Clean (2019)', 'this was the first release of the then new static dress project. written, featured in, technical assistance, set design/building.', 'https://www.youtube.com/watch?v=i4e_b-DmggY', 'https://open.spotify.com/track/1vIFieaqVeCU55JZjwpJID?si=e19cbd9ed0c34e43')">
-                        <video muted loop preload="auto" playsinline>
-                            <source src="vid/clean.mp4" type="video/mp4">
+                    <div class="carouselThumb active" data-media-type="image" data-src="img/label-tool.png"
+                        data-title="Label Maker"
+                        data-desc="This is a simple web-based tool written for generating custom labels. This is fully custom to our workflow and used internally by multiple staff daily. We receive order spreadsheets which need to be parsed into labels for each individual item and box in the packing department. This tool lets you create both types of labels and it automatically populates the information based on which item and store you’re picking. This saves an immense amount of time and cuts mistakes down to near zero as this was all done manually beforehand."
+                        data-link1="https://tsh-label-maker.vercel.app/"
+                        data-label1="Live Demo"
+                        data-icon1="fa-solid fa-gamepad"
+                        data-link2="https://github.com/tomblack9452/TSH-Label-Maker"
+                        data-label2="GitHub"
+                        data-icon2="fa-brands fa-github">
+                        <div class="carouselThumbMedia">
+                            <img src="img/label-tool.png" alt="Label maker screenshot">
+                        </div>
+                        <span>Label Maker</span>
+                    </div>
+
+                    <div class="carouselThumb" data-media-type="image" data-src="img/laravel-order-note-tool.png"
+                         data-title="Laravel Order Note Tool"
+                         data-desc="A Laravel based application for managing order notes and warehouse picking workflows. It allows for attaching notes to orders, helping staff process orders faster and with fewer mistakes. This was built in 3-4 hours as a tech test for a job application."
+                         data-link1="https://github.com/tomblack9452/order-note-board-tech-test"
+                         data-label1="GitHub"
+                         data-icon1="fa-brands fa-github"
+                         data-link2=""
+                         data-label2=""
+                         data-icon2="">
+                        <div class="carouselThumbMedia">
+                            <img src="img/laravel-order-note-tool.png" alt="Laravel based order note tool screenshot">
+                        </div>
+                        <span>Laravel Order Note Tool</span>
+                    </div>
+
+                    <div class="carouselThumb" data-media-type="image" data-src="img/palindrome-checker.png"
+                         data-title="Palindrome Checker"
+                         data-desc="A simple web application for checking if a string is a palindrome. Built with JavaScript as a practice project to demonstrate my coding skills. This was built in about an hour and is a fun example of a small utility app that can be built with basic web technologies."
+                         data-link1="https://palindrome-checker-beige.vercel.app/"
+                         data-label1="Live Demo"
+                         data-icon1="fa-solid fa-gamepad"
+                         data-link2="https://github.com/tomblack9452/palindrome-checker"
+                         data-label2="GitHub"
+                         data-icon2="fa-brands fa-github">
+                        <div class="carouselThumbMedia">
+                            <img src="img/palindrome-checker.png" alt="Palindrome checker screenshot">
+                        </div>
+                        <span>Palindrome Checker</span>
+                    </div>
+
+                    <div class="carouselThumb" data-media-type="image" data-src="img/abstract-clone.png"
+                         data-title="Abstract Help Center Clone"
+                         data-desc="A clone of the Abstract help center. This was a personal project from Frontend Mentor to practice my frontend skills and demonstrate my ability to recreate existing designs."
+                         data-link1="https://abstract-help-center-clone.vercel.app/"
+                         data-label1="Live Demo"
+                         data-icon1="fa-solid fa-gamepad"
+                         data-link2="https://github.com/tomblack9452/abstract-help-center-clone"
+                         data-label2="GitHub"
+                         data-icon2="fa-brands fa-github">
+                        <div class="carouselThumbMedia">
+                            <img src="img/abstract-clone.png" alt="Abstract help center clone screenshot">
+                        </div>
+                        <span>Abstract Help Center Clone</span>
+                    </div>
+
+                    <div class="carouselThumb" data-media-type="image" data-src="img/nft-preview-card.png"
+                         data-title="NFT Preview Card"
+                         data-desc="A responsive preview card for displaying NFT information. A project from Frontend Mentor built with HTML and CSS to practice my frontend skills."
+                         data-link1="https://nft-preview-card-steel-kappa.vercel.app/"
+                         data-label1="Live Demo"
+                         data-icon1="fa-solid fa-gamepad"
+                         data-link2="https://github.com/tomblack9452/nft-preview-card"
+                         data-label2="GitHub"
+                         data-icon2="fa-brands fa-github">
+                        <div class="carouselThumbMedia">
+                            <img src="img/nft-preview-card.png" alt="NFT preview card screenshot">
+                        </div>
+                        <span>NFT Preview Card</span>
+                    </div>
+
+                    <div class="carouselThumb" data-media-type="image" data-src="img/blog-preview-card.png"
+                         data-title="Blog Preview Card"
+                         data-desc="A responsive preview card for displaying blog information. A project from Frontend Mentor built with HTML and CSS to practice my frontend skills."
+                         data-link1="https://blog-preview-card-seven-phi.vercel.app/"
+                         data-label1="Live Demo"
+                         data-icon1="fa-solid fa-gamepad"
+                         data-link2="https://github.com/tomblack9452/blog-preview-card"
+                         data-label2="GitHub"
+                         data-icon2="fa-brands fa-github">
+                        <div class="carouselThumbMedia">
+                            <img src="img/blog-preview-card.png" alt="Blog preview card screenshot">
+                        </div>
+                        <span>Blog Preview Card</span>
+                    </div>
+                </div>
+            </div>
+
+            <br><br><span><i>music</i></span>
+
+            <div class="carousel" data-carousel="music">
+
+                <!-- Main feature video -->
+                <div class="carouselMain">
+                    <div class="projectCard" id="musicMainCard">
+                        <video id="musicMainVideo" width="100%" height="100%" autoplay muted loop preload="auto">
+                            <source id="musicMainVideoSrc" src="vid/clean.mp4" type="video/mp4">
                         </video>
+                        <img id="musicMainImage" src="" alt="" style="display:none;">
+                        <div class="projectOverlay">
+                            <h1 id="musicMainTitle">Static Dress - clean . (2019)</h1>
+                            <span id="musicMainDesc">this was the first release of the then new static dress project. written, featured in, technical assistance, set design/building.</span>
+                            <span id="musicMainYt"><i class="fa-brands fa-youtube"></i><a href="https://www.youtube.com/watch?v=i4e_b-DmggY" target="_blank">YouTube</a></span>
+                            <span id="musicMainSp"><i class="fa-brands fa-spotify"></i><a href="https://open.spotify.com/track/1vIFieaqVeCU55JZjwpJID?si=e19cbd9ed0c34e43" target="_blank">Spotify</a></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Scrollable thumbnail strip -->
+                <div class="carouselStrip">
+
+                    <div class="carouselThumb active" data-media-type="video" data-src="vid/clean.mp4"
+                        data-title="Static Dress - Clean (2019)"
+                        data-desc="This was the first release of the then new static dress project. Written, featured in, technical assistance, set design/building."
+                        data-link1="https://www.youtube.com/watch?v=i4e_b-DmggY"
+                        data-label1="YouTube"
+                        data-icon1="fa-brands fa-youtube"
+                        data-link2="https://open.spotify.com/track/1vIFieaqVeCU55JZjwpJID?si=e19cbd9ed0c34e43"
+                        data-label2="Spotify"
+                        data-icon2="fa-brands fa-spotify">
+                        <div class="carouselThumbMedia">
+                            <video muted loop preload="auto" playsinline>
+                                <source src="vid/clean.mp4" type="video/mp4">
+                            </video>
+                        </div>
                         <span>clean.</span>
                     </div>
 
-                    <div class="carouselThumb" onclick="setActive(this, 'vid/dsc_301.mp4', 'Static Dress - DSC_301 (2019)', 'an interlude track. very simple video and song idea, named after and inspired by a mysterious undisclosed photo with the same name.', 'https://www.youtube.com/watch?v=z4lnCg9_86Q', 'https://open.spotify.com/track/4mXT7Jadd5MR9kGfCHoF3j?si=db3e56e83ff5447f')">
-                        <video muted loop preload="auto" playsinline>
-                            <source src="vid/dsc_301.mp4" type="video/mp4">
-                        </video>
+                    <div class="carouselThumb" data-media-type="video" data-src="vid/dsc_301.mp4"
+                        data-title="Static Dress - DSC_301 (2019)"
+                        data-desc="An interlude track. Very simple video and song idea, named after and inspired by a mysterious undisclosed photo with the same name."
+                        data-link1="https://www.youtube.com/watch?v=z4lnCg9_86Q"
+                        data-label1="YouTube"
+                        data-icon1="fa-brands fa-youtube"
+                        data-link2="https://open.spotify.com/track/4mXT7Jadd5MR9kGfCHoF3j?si=db3e56e83ff5447f"
+                        data-label2="Spotify"
+                        data-icon2="fa-brands fa-spotify">
+                        <div class="carouselThumbMedia">
+                            <video muted loop preload="auto" playsinline>
+                                <source src="vid/dsc_301.mp4" type="video/mp4">
+                            </video>
+                        </div>
                         <span>DSC_301</span>
                     </div>
 
-                    <div class="carouselThumb" onclick="setActive(this, 'vid/adaptive taste.mp4', 'Static Dress - Adaptive Taste (2019)', 'the second full release of the static dress project. written, featured in, technical assistance, set design/building.', 'https://www.youtube.com/watch?v=hX8giPKJN2Q', 'https://open.spotify.com/track/6HRxVBgLg6KiGQ1jj4Yfx7?si=ab0c88b057984233')">
-                        <video muted loop preload="auto" playsinline>
-                            <source src="vid/adaptive taste.mp4" type="video/mp4">
-                        </video>
+                    <div class="carouselThumb" data-media-type="video" data-src="vid/adaptive taste.mp4"
+                        data-title="Static Dress - Adaptive Taste (2019)"
+                        data-desc="The second full release of the Static Dress project. Written, featured in, technical assistance, set design/building."
+                        data-link1="https://www.youtube.com/watch?v=hX8giPKJN2Q"
+                        data-label1="YouTube"
+                        data-icon1="fa-brands fa-youtube"
+                        data-link2="https://open.spotify.com/track/6HRxVBgLg6KiGQ1jj4Yfx7?si=ab0c88b057984233"
+                        data-label2="Spotify"
+                        data-icon2="fa-brands fa-spotify">
+                        <div class="carouselThumbMedia">
+                            <video muted loop preload="auto" playsinline>
+                                <source src="vid/adaptive taste.mp4" type="video/mp4">
+                            </video>
+                        </div>
                         <span>Adaptive Taste</span>
                     </div>
 
-                    <div class="carouselThumb" onclick="setActive(this, 'vid/safeword.mp4', 'Static Dress - Safeword (2020)', 'a track previously named gradient that was revamped in a 3am session. written, featured in, technical assistance, set design/building.', 'https://www.youtube.com/watch?v=9-ML8G3Uhdg', 'https://open.spotify.com/track/2Yo4G6zMFWvF6KbSDJrOz3?si=4a43947832704ee6')">
-                        <video muted loop preload="auto" playsinline>
-                            <source src="vid/safeword.mp4" type="video/mp4">
-                        </video>
+                    <div class="carouselThumb" data-media-type="video" data-src="vid/safeword.mp4"
+                        data-title="Static Dress - Safeword (2020)"
+                        data-desc="A track previously named Gradient that was revamped in a 3am session. Written, featured in, technical assistance, set design/building."
+                        data-link1="https://www.youtube.com/watch?v=9-ML8G3Uhdg"
+                        data-label1="YouTube"
+                        data-icon1="fa-brands fa-youtube"
+                        data-link2="https://open.spotify.com/track/2Yo4G6zMFWvF6KbSDJrOz3?si=4a43947832704ee6"
+                        data-label2="Spotify"
+                        data-icon2="fa-brands fa-spotify">
+                        <div class="carouselThumbMedia">
+                            <video muted loop preload="auto" playsinline>
+                                <source src="vid/safeword.mp4" type="video/mp4">
+                            </video>
+                        </div>
                         <span>Safeword</span>
                     </div>
 
-                    <div class="carouselThumb" onclick="setActive(this, 'vid/ftao.mp4', 'Static Dress - for the attention of... (2020)', 'the heaviest and most technically crazy song yet. written, featured in, technical assistance, set design/building.', 'https://www.youtube.com/watch?v=KUbb-zHd7C4', 'https://open.spotify.com/track/6F3amm6B9ChI64SYqh56hV?si=be7706e4fb8e4743')">
-                        <video muted loop preload="auto" playsinline>
-                            <source src="vid/ftao.mp4" type="video/mp4">
-                        </video>
+                    <div class="carouselThumb" data-media-type="video" data-src="vid/ftao.mp4"
+                        data-title="Static Dress - for the attention of... (2020)"
+                        data-desc="The heaviest and most technically crazy song yet. Written, featured in, technical assistance, set design/building."
+                        data-link1="https://www.youtube.com/watch?v=KUbb-zHd7C4"
+                        data-label1="YouTube"
+                        data-icon1="fa-brands fa-youtube"
+                        data-link2="https://open.spotify.com/track/6F3amm6B9ChI64SYqh56hV?si=be7706e4fb8e4743"
+                        data-label2="Spotify"
+                        data-icon2="fa-brands fa-spotify">
+                        <div class="carouselThumbMedia">
+                            <video muted loop preload="auto" playsinline>
+                                <source src="vid/ftao.mp4" type="video/mp4">
+                            </video>
+                        </div>
                         <span>for the attention of...</span>
                     </div>
 
-                    <div class="carouselThumb" onclick="setActive(this, 'vid/indecent_.mp4', 'Static Dress - _indecent (2021)', 'an interlude track recorded separately because of covid restrictions. written, featured in, technical assistance, set design/building.', 'https://www.youtube.com/watch?v=O_yBimApMLw', 'https://open.spotify.com/track/14cqD50HFB7NEjtQMRCK84?si=320337c63adb4dbd')">
-                        <video muted loop preload="auto" playsinline>
-                            <source src="vid/indecent_.mp4" type="video/mp4">
-                        </video>
+                    <div class="carouselThumb" data-media-type="video" data-src="vid/indecent_.mp4"
+                        data-title="Static Dress - _indecent (2021)"
+                        data-desc="An interlude track recorded separately because of covid restrictions. Written, featured in, technical assistance, set design/building."
+                        data-link1="https://www.youtube.com/watch?v=O_yBimApMLw"
+                        data-label1="YouTube"
+                        data-icon1="fa-brands fa-youtube"
+                        data-link2="https://open.spotify.com/track/14cqD50HFB7NEjtQMRCK84?si=320337c63adb4dbd"
+                        data-label2="Spotify"
+                        data-icon2="fa-brands fa-spotify">
+                        <div class="carouselThumbMedia">
+                            <video muted loop preload="auto" playsinline>
+                                <source src="vid/indecent_.mp4" type="video/mp4">
+                            </video>
+                        </div>
                         <span>_indecent</span>
                     </div>
 
