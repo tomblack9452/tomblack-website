@@ -50,6 +50,14 @@ function card4Toggle() {
     x.style.display = "block";
   }
 }
+function card5Toggle() {
+  var x = document.getElementById("card5");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
 function moreVideosToggle() {
   var x = document.getElementById("moreVideos");
   var btn = event.currentTarget;

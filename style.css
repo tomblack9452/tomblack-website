@@ -165,7 +165,9 @@ hr {
 }
 
 .stackIconWrapper {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    justify-content: start;
 }
 
 .stackIcon {
